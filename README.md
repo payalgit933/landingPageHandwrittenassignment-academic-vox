@@ -1,6 +1,9 @@
 # landingPageHandwrittenassignment-academic-vox
+
 Developed a landing page for Academic Vox website.
 
-![Landing Page Screenshot](Screenshot226.png)
+## Screenshots
 
-![Landing Page Screenshot](Screenshot227.png)
+<img src="screenshot226.png" width="600">
+
+<img src="screenshot227.png" width="600">
