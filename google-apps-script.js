@@ -220,7 +220,7 @@ function initHeroQueryForm() {
             };
             
             // Send to Google Sheets via Google Apps Script
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwmrs0NBVX6RaYXCU3fJBIYXwHDNmNqZWbxiUlEPKDB57CYwOf1Nykr9Pi7-HrcUpo/exec'; // Replace with your Apps Script URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyTMkjftzESqt_kte_vmmCjx5Ju0QnIUy1usW9lIsdYb0Kx_ApDxOwIS7NkrtN1P3DI/exec'; // Replace with your Apps Script URL
             
             fetch(scriptURL, {
                 method: 'POST',
@@ -279,7 +279,7 @@ function initContactForm() {
             };
             
             // Send to Google Sheets via Google Apps Script
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwmrs0NBVX6RaYXCU3fJBIYXwHDNmNqZWbxiUlEPKDB57CYwOf1Nykr9Pi7-HrcUpo/exec'; // Replace with your Apps Script URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyTMkjftzESqt_kte_vmmCjx5Ju0QnIUy1usW9lIsdYb0Kx_ApDxOwIS7NkrtN1P3DI/exec'; // Replace with your Apps Script URL
             
             fetch(scriptURL, {
                 method: 'POST',
