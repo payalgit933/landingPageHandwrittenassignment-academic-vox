@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNOU Handwritten Assignments - Professional Assignment Services</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#home">
+                <i class="fas fa-graduation-cap me-2"></i>IGNOU Assignments
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge mb-3">
+                            <i class="fas fa-star me-2"></i>
+                            <span>Trusted by 10,000+ Students</span>
+                        </div>
+                        <h2 class="hero-title mb-4">
+                            <span class="title-main">IGNOU Handwritten Assignments</span>
+                            <span class="title-subtitle">Fast, Reliable & 100% Approved</span>
+                        </h2>
+                        <p class="hero-description mb-4">
+                            Get professionally written, high-quality assignments tailored to IGNOU standards. 
+                            <span class="highlight-text">Never miss a deadline again!</span>
+                        </p>
+                        <div class="hero-features mb-4">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>100% Approval Guaranteed</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>On-Time Delivery</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Expert Writers</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="tel:+919821933855" class="btn btn-primary btn-lg me-3 mb-2 hero-btn">
+                                <i class="fas fa-phone me-2"></i>Call Us Now
+                            </a>
+                            <a href="https://wa.me/919821933855" class="btn btn-success btn-lg me-3 mb-2 hero-btn" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>WhatsApp Us
+                            </a>
+                            <!-- Debug button - remove in production -->
+                            <button onclick="showQueryPopup()" class="btn btn-warning btn-lg me-3 mb-2 hero-btn" style="display: none;" id="debug-popup-btn">
+                                <i class="fas fa-bug me-2"></i>Test Popup
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-query-box">
+                        <div class="query-box-header">
+                            <i class="fas fa-comment-dots me-2"></i>
+                            <h4>Drop Your Query Here</h4>
+                        </div>
+                        <form class="query-form" id="queryForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="enrollment" name="enrollment" placeholder="Enrollment Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="requirements" name="requirements" rows="3" placeholder="Describe your assignment requirements..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">
+                                Submit Form
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Highlights Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row text-center">
+                        <div class="col-md-2 col-6 mb-4">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle highlight-icon"></i>
+                                <h6>100% Approval Guaranteed</h6>
+                                <small>As per IGNOU guidelines</small>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 mb-4">
+                            <div class="highlight-item">
+                                <i class="fas fa-clock highlight-icon"></i>
+                                <h6>Fast & On-Time Delivery</h6>
+                                <small>Never miss deadlines</small>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 mb-4">
+                            <div class="highlight-item">
+                                <i class="fas fa-user-graduate highlight-icon"></i>
+                                <h6>Expert Writers</h6>
+                                <small>Specialized in IGNOU courses</small>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 mb-4">
+                            <div class="highlight-item">
+                                <i class="fas fa-rupee-sign highlight-icon"></i>
+                                <h6>Affordable Pricing</h6>
+                                <small>Student-friendly rates</small>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 mb-4">
+                            <div class="highlight-item">
+                                <i class="fab fa-whatsapp highlight-icon"></i>
+                                <h6>24/7 WhatsApp Support</h6>
+                                <small>Instant help anytime</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assignment Samples Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title mb-4">Assignment Samples</h2>
+                    <p class="lead text-muted">
+                        Watch our sample assignments to see the quality and format of our work
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="sample-card">
+                        <div class="sample-video">
+                            <iframe 
+                                src="https://www.youtube.com/embed/5ghpol6Y5t8"
+                                title="Sample Assignment 1"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="sample-content">
+                            <h5>MCA Assignment Sample</h5>
+                            <p>Watch this sample MCA assignment to see our handwriting quality and format.</p>
+                            <a href="https://www.youtube.com/watch?v=5ghpol6Y5t8&embeds_referring_euri=https%3A%2F%2Fsales.ignouprojects.in%2F&source_ve_path=Mjg2NjY" class="btn btn-outline-primary" target="_blank">
+                                <i class="fab fa-youtube me-2"></i>Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="sample-card">
+                        <div class="sample-video">
+                            <iframe 
+                                src="https://www.youtube.com/embed/5ghpol6Y5t8"
+                                title="Sample Assignment 2"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="sample-content">
+                            <h5>BA Assignment Sample</h5>
+                            <p>Check out this BA assignment sample showcasing our neat handwriting and structure.</p>
+                            <a href="https://www.youtube.com/watch?v=5ghpol6Y5t8&embeds_referring_euri=https%3A%2F%2Fsales.ignouprojects.in%2F&source_ve_path=Mjg2NjY" class="btn btn-outline-primary" target="_blank">
+                                <i class="fab fa-youtube me-2"></i>Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="sample-card">
+                        <div class="sample-video">
+                            <iframe 
+                                src="https://www.youtube.com/embed/5ghpol6Y5t8"
+                                title="Sample Assignment 3"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="sample-content">
+                            <h5>MBA Assignment Sample</h5>
+                            <p>See our MBA assignment quality with professional presentation and content.</p>
+                            <a href="https://www.youtube.com/watch?v=5ghpol6Y5t8&embeds_referring_euri=https%3A%2F%2Fsales.ignouprojects.in%2F&source_ve_path=Mjg2NjY" class="btn btn-outline-primary" target="_blank">
+                                <i class="fab fa-youtube me-2"></i>Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-4">About Us</h2>
+                    <p class="lead text-muted mb-4">
+                        We provide handwritten IGNOU assignments & projects that ensure smooth approval in your term-end submissions.
+                        With years of experience and a dedicated team of academic experts, we guarantee assignments that are:
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-card">
+                                <i class="fas fa-pen-fancy feature-icon"></i>
+                                <h5>Neatly Handwritten</h5>
+                                <p>All assignments are handwritten by experienced writers with neat, readable handwriting.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-card">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <h5>100% Error-Free</h5>
+                                <p>Thoroughly checked and proofread assignments with zero errors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-card">
+                                <i class="fas fa-graduation-cap feature-icon"></i>
+                                <h5>IGNOU Guidelines</h5>
+                                <p>Strictly follows the latest IGNOU guidelines and format requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </section>
+
+      <!-- Social Proof Section -->
+      <section class="py-5 bg-light">
+          <div class="container">
+              <div class="row justify-content-center mb-5">
+                  <div class="col-lg-8 text-center">
+                      <h2 class="section-title mb-3">Trusted by Thousands of Students</h2>
+                      <p class="lead text-muted">See what our satisfied students have to say about our IGNOU assignment services</p>
+                  </div>
+              </div>
+              
+              <div class="row g-4">
+                  <div class="col-lg-6">
+                      <div class="social-proof-card">
+                          <div class="card-image">
+                              <img src="img2.jpg" alt="Assignment Sample 1" class="img-fluid">
+                              <div class="image-overlay">
+                                  <div class="overlay-content">
+                                      <i class="fas fa-star text-warning"></i>
+                                      <span class="rating-text">5.0 Rating</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card-content">
+                              <h5 class="card-title">Professional Handwriting</h5>
+                              <p class="card-text">Neat, clean, and perfectly formatted assignments that meet IGNOU standards.</p>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-lg-6">
+                      <div class="social-proof-card">
+                          <div class="card-image">
+                              <img src="img1.jpg" alt="Assignment Sample 2" class="img-fluid">
+                              <div class="image-overlay">
+                                  <div class="overlay-content">
+                                      <i class="fas fa-check-circle text-success"></i>
+                                      <span class="rating-text">100% Approved</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card-content">
+                              <h5 class="card-title">Perfect Formatting</h5>
+                              <p class="card-text">Exactly as per IGNOU guidelines with proper structure and presentation.</p>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="row mt-5">
+                  <div class="col-12 text-center">
+                      <div class="trust-indicators">
+                          <div class="trust-item">
+                              <i class="fas fa-users text-primary"></i>
+                              <h4 class="trust-number">10,000+</h4>
+                              <p class="trust-label">Happy Students</p>
+                          </div>
+                          <div class="trust-item">
+                              <i class="fas fa-check-circle text-success"></i>
+                              <h4 class="trust-number">99.8%</h4>
+                              <p class="trust-label">Approval Rate</p>
+                          </div>
+                          <div class="trust-item">
+                              <i class="fas fa-clock text-warning"></i>
+                              <h4 class="trust-number">24/7</h4>
+                              <p class="trust-label">Support</p>
+                          </div>
+                          <div class="trust-item">
+                              <i class="fas fa-star text-warning"></i>
+                              <h4 class="trust-number">4.9/5</h4>
+                              <p class="trust-label">Rating</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Course Coverage Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-4">
+                    <h3 class="mb-3">We Cover All IGNOU Courses</h3>
+                    <p class="text-muted">Whether it's MCA, BCA, MBA, BA, MA, M.Com, B.Com, or Diploma projects, we've got you covered.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="course-tags">
+                        <span class="course-tag">MCA</span>
+                        <span class="course-tag">BCA</span>
+                        <span class="course-tag">MBA</span>
+                        <span class="course-tag">BA</span>
+                        <span class="course-tag">MA</span>
+                        <span class="course-tag">M.Com</span>
+                        <span class="course-tag">B.Com</span>
+                        <span class="course-tag">Diploma</span>
+                        <span class="course-tag">Certificate Courses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title mb-4">Our Services</h2>
+                    <p class="lead text-muted">
+                        Professional handwritten assignments & projects for all IGNOU courses
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-book service-icon"></i>
+                        <h5>Bachelor's Programs</h5>
+                        <p>BA, BCOM, BSC, BCA assignments for all semesters with detailed solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-graduation-cap service-icon"></i>
+                        <h5>Master's Programs</h5>
+                        <p>MA, MCOM, MSC, MCA assignments with comprehensive coverage of topics.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-certificate service-icon"></i>
+                        <h5>Certificate Courses</h5>
+                        <p>Professional certificate course assignments with practical examples.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-project-diagram service-icon"></i>
+                        <h5>Project Work</h5>
+                        <p>Complete project reports and synopsis for final year students.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-edit service-icon"></i>
+                        <h5>Custom Writing</h5>
+                        <p>Tailored assignments based on specific requirements and guidelines.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-redo service-icon"></i>
+                        <h5>Free Revisions</h5>
+                        <p>Unlimited revisions and modifications until you're completely satisfied.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title mb-4">Get Free Quote Now on WhatsApp</h2>
+                    <p class="lead text-muted">
+                        Click below and connect directly with our experts for instant assistance.
+                    </p>
+                    <div class="cta-buttons mb-4">
+                        <a href="https://wa.me/919821933855" class="btn btn-success btn-lg me-3 mb-2" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp Us
+                        </a>
+                        <a href="tel:+919821933855" class="btn btn-primary btn-lg me-3 mb-2">
+                            <i class="fas fa-phone me-2"></i>Call Us
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="contactName" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="contactPhone" name="phone" placeholder="Your Phone Number">
+                            </div>
+                                            <div class="mb-3">
+                    <input type="text" class="form-control" id="contactEnrollment" name="enrollment" placeholder="Enrollment Number" required>
+                </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="contactMessage" name="message" rows="5" placeholder="Tell us about your assignment requirements..." required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-brand">
+                        <i class="fas fa-graduation-cap me-2"></i>IGNOU Assignment Help
+                    </h5>
+                    <p class="footer-description">
+                        Your trusted partner for academic excellence with 100% approval guarantee and 24/7 support.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#about">Our Courses</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">Why Choose Us</a></li>
+                        <li><a href="#contact">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">Contact Info</h6>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+919821933855">+91 9821933855</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@academicvox.com">info@academicvox.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ignouassignment.in All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-bottom-links">
+                        <a href="#" target="_blank">Privacy Policy</a>
+                        <a href="#" target="_blank">Terms of Service</a>
+                        <a href="#" target="_blank">Refund Policy</a>
+                        <a href="#" target="_blank">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Query Popup -->
+    <div id="query-popup" class="query-popup">
+        <div class="query-popup-overlay" onclick="closeQueryPopup()"></div>
+        <div class="query-popup-content">
+            <div class="query-popup-header">
+                <h4><i class="fas fa-comment-dots me-2"></i>Have a Question?</h4>
+                <button class="query-popup-close" onclick="closeQueryPopup()">&times;</button>
+            </div>
+            <div class="query-popup-body">
+                <p class="text-muted mb-3">Drop your query below and we'll get back to you within 24 hours!</p>
+                <form id="queryPopupForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="popupName" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="popupEmail" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="popupQuery" name="query" rows="4" placeholder="Your Query..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-paper-plane me-2"></i>Send Query
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <!-- Custom JS -->
+    <script src="script.js">
+
+        // For Query Form
+document.getElementById("queryForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // stop default refresh
+    if (this.checkValidity()) {
+        window.location.href = "thank-you.html";
+    } else {
+        this.reportValidity();
+    }
+});
+
+// For Contact Form
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (this.checkValidity()) {
+        window.location.href = "thank-you.html";
+    } else {
+        this.reportValidity();
+    }
+});
+
+    </script>
+</body>
+</html>
